@@ -1,0 +1,13 @@
+p {
+  background: $asosiy-rang;
+  border: 1px solid adjust-hue($asosiy-rang, 250);
+  box-shadow: 0 0 20px rgba(#efca23, .9);
+
+  &:hover {
+    color: lighten($asosiy-rang, 10);
+  }
+
+  &:active {
+    color: darken($asosiy-rang, 10);
+  }
+}

@@ -3,24 +3,6 @@
   Multi-line
   (CSS)
 */
-header#main-header {
-  display: flex;
-  position: sticky;
-  top: 0;
-}
-
-:root {
-  --asosiy-rang: red;
-}
-
-h1 {
-  color: var(--asosiy-rang);
-}
-
-h1 {
-  color: red;
-}
-
 body {
   font-family: sans-serif;
   background: green;
@@ -41,6 +23,12 @@ img {
 
 ul {
   list-style: none;
+}
+
+header#main-header {
+  display: flex;
+  position: sticky;
+  top: 0;
 }
 
 section#showcase {
@@ -64,4 +52,33 @@ section#showcase > .container .flex .flex-1:hover {
 }
 section#showcase > .container .flex .flex-1:nth-child(2) p {
   text-align: center;
+}
+
+footer#main-footer {
+  background: darkcyan;
+  color: red;
+}
+
+p {
+  background: red;
+  border: 1px solid #2b00ff;
+  box-shadow: 0 0 20px rgba(239, 202, 35, 0.9);
+}
+p:hover {
+  color: #ff3333;
+}
+p:active {
+  color: #cc0000;
+}
+
+:root {
+  --asosiy-rang: red;
+}
+
+h1 {
+  color: var(--asosiy-rang);
+}
+
+h1 {
+  color: red;
 }/*# sourceMappingURL=main.css.map */
