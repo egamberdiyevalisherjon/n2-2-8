@@ -3,6 +3,12 @@
   Multi-line
   (CSS)
 */
+header#main-header {
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
 :root {
   --asosiy-rang: red;
 }

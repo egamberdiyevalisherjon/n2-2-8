@@ -8,6 +8,13 @@
 // Single
 // (SASS)
 
+// Partials => qismlar
+@import "variables";
+@import "reset";
+@import "header";
+@import "showcase";
+@import "footer";
+
 :root {
   --asosiy-rang: red;
 }
@@ -16,74 +23,6 @@ h1 {
   color: var(--asosiy-rang);
 }
 
-// Variables
-$asosiy-rang: red;
-// Data types
-$string: "Poppins";
-$number: 12;
-$boolean: true; // false
-$list: (red, blue, green, yellow, 30px);
-$map: (
-  lg: 400px,
-  md: 300px,
-  sm: 200px,
-  xs: 100px,
-);
-
 h1 {
   color: $asosiy-rang;
-}
-
-body {
-  font-family: sans-serif;
-  background: green;
-  font-size: 20px;
-}
-
-h1 {
-  margin: 20px;
-}
-
-p {
-  color: white;
-}
-
-img {
-  min-width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
-// Nesting => uyalash
-// & => Current selector
-section#showcase {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  > .container {
-    width: 1200px;
-    margin: 0 auto;
-
-    .flex {
-      display: flex;
-
-      .flex-1 {
-        flex: 1;
-
-        &:hover {
-          background: red;
-        }
-
-        &:nth-child(2) {
-          p {
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
 }
