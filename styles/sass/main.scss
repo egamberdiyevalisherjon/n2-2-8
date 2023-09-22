@@ -4,8 +4,8 @@
   (CSS)
 */
 
-// CSS ga otmidigan, 
-// Single 
+// CSS ga otmidigan,
+// Single
 // (SASS)
 body {
   font-family: sans-serif;
@@ -29,7 +29,34 @@ ul {
   list-style: none;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
+// Nesting => uyalash
+// & => Current selector
+section#showcase {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > .container {
+    width: 1200px;
+    margin: 0 auto;
+
+    .flex {
+      display: flex;
+
+      .flex-1 {
+        flex: 1;
+
+        &:hover {
+          background: red;
+        }
+
+        &:nth-child(2) {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
