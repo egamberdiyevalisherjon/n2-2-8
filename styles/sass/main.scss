@@ -7,6 +7,22 @@
 // CSS ga otmidigan,
 // Single
 // (SASS)
+
+:root {
+  --asosiy-rang: red;
+}
+
+h1 {
+  color: var(--asosiy-rang);
+}
+
+// Variables
+$asosiy-rang: red;
+
+h1 {
+  color: $asosiy-rang;
+}
+
 body {
   font-family: sans-serif;
   background: green;

@@ -3,6 +3,18 @@
   Multi-line
   (CSS)
 */
+:root {
+  --asosiy-rang: red;
+}
+
+h1 {
+  color: var(--asosiy-rang);
+}
+
+h1 {
+  color: red;
+}
+
 body {
   font-family: sans-serif;
   background: green;
